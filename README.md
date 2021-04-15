@@ -7,7 +7,7 @@
 
 ### 📄 Docs
 
-- [Lesson Summary](https://...)
+- [Lesson Summary](https://github.com/hamburgcodingschool/FSC-April-2020-HTML/blob/main/docs/summary.md)
 
 - [Handout](https://...)
 
