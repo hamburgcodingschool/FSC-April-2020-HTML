@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navigation</title>
+  <style>
+    body * {
+      margin: 5px;
+      box-sizing: border-box;
+    }
+
+    header {
+      width: 100%;
+      background-color: #ddd;
+      padding: 20px 10px;
+      position: fixed;
+    }
+    nav {
+      background-color: #ddd;
+      width: 200px;
+      position: fixed;
+      top: 75px;
+    }
+
+    p {
+      width: 100px;
+    }
+    #content {
+      padding-left: 200px;
+      padding-top: 75px;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #ddd;
+      position: fixed;
+      bottom: 0;
+      padding: 20px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <header>
+      header
+    </header>
+    
+    <nav>
+      <ul>
+        <li>nav</li>
+        <li>nav</li>
+        <li>nav</li>
+        <li>nav</li>
+        <li>nav</li>
+      </ul>
+    </nav>
+    
+    <div id="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit, soluta ducimus nihil repellendus, nesciunt consequatur asperiores ratione officiis laborum est? Accusantium fugit odio, placeat consectetur harum at officia neque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit, soluta ducimus nihil repellendus, nesciunt
+        consequatur asperiores ratione officiis laborum est? Accusantium fugit odio, placeat consectetur harum at officia
+        neque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit, soluta ducimus nihil repellendus, nesciunt
+        consequatur asperiores ratione officiis laborum est? Accusantium fugit odio, placeat consectetur harum at officia
+        neque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sit, soluta ducimus nihil repellendus, nesciunt
+        consequatur asperiores ratione officiis laborum est? Accusantium fugit odio, placeat consectetur harum at officia
+        neque.</p>
+    </div>
+    
+    <footer>
+      footer
+    </footer>
+  </div>
+  
+</body>
+</html>

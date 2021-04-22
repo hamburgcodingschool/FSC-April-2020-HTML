@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mondi</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-size: 0;
+    }
+
+    #mondrian-container {
+      background-color: #000;
+      width: 650px;
+      padding-top: 5px;
+      margin: 0 auto;
+    }
+    
+    .m-box {
+      display: inline-block;
+      background-color: blue;
+      margin: 0 0 5px 5px;
+      height: 50px;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    .white {
+      background-color: white;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .red.swapped {
+      position: relative;
+      right: -105px;
+      top: 55px;
+      width: 100px;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .orange {
+      background-color: orange;
+    }
+
+    .orange.swapped {
+      position: relative;
+      top: -55px;
+      left: -105px;
+    }
+  </style>
+</head>
+<body>
+  <div id="mondrian-container">
+    <div style="width: 110px; display: inline-block;">
+      <span class="m-box white" style="width: 80px; height: 105px;"></span>
+      <span class="m-box yellow" style="width: 20px; height: 105px;"></span>
+    </div>
+    <div style="width: 535px; display: inline-block;">
+      <span class="m-box white" style="width: 250px;"></span>
+      <span class="m-box white" style="width: 50px;"></span>
+      <span class="m-box red swapped" style="width: 100px;"></span>
+      <span class="m-box white" style="width: 115px;"></span>
+      <span class="m-box white" style="width: 250px;"></span>
+      <span class="m-box blue" style="width: 50px;"></span>
+      <span class="m-box white" style="width: 100px;"></span>
+      <span class="m-box orange swapped" style="width: 115px;"></span>
+    </div>
+    <div>
+      <span class="m-box white" style="width: 400px; margin-left: 245px; height: 200px;"></span>
+    </div>
+    <div style="margin-top: -205px;">
+      <span class="m-box white" style="width: 235px; height: 350px;"></span>
+      <span class="m-box white" style="width: 400px; height: 145px;"></span>
+    </div>
+    
+  </div>
+  <!--img src="/images/mondi.png" alt="" style="width: 400px;"-->
+  
+</body>
+</html>

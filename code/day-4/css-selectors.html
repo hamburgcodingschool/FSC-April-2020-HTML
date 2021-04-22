@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    body p span {
+      font-size: 50px;
+    }
+
+    div > p {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .bold {
+      font-weight: bold;
+      font-size: 24px;
+      position: relative;
+    }
+
+    .bold.blue {
+      font-family: monospace;
+    }
+
+    p.bold::before {
+      content: "#";
+      color: chocolate;
+      position: absolute;
+      top: -15px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div>
+    <p class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odio optio tempore atque soluta, quisquam unde ratione ducimus facilis veniam! Doloremque <span>lalala</span>mollitia rem inventore sunt. Dolores odio eligendi tenetur cumque!</p>
+    <span><p>inside a span</p></span>
+    <p class="bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi non possimus accusantium blanditiis reiciendis ullam, maxime velit quo error quasi ad nesciunt exercitationem tenetur perspiciatis, culpa soluta deserunt eos qui.</p>
+  </div>
+  <p class="bold blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga voluptates accusamus, labore quis tempora mollitia pariatur eius eos atque eveniet libero error tenetur magni animi ullam quibusdam repellendus fugit.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fuga voluptates accusamus, labore quis tempora
+    mollitia pariatur eius eos atque eveniet libero error tenetur magni animi ullam quibusdam repellendus fugit.</p>
+</body>
+</html>
