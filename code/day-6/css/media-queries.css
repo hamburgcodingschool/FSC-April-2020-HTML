@@ -1,0 +1,50 @@
+
+
+#flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 1px solid hsl(10, 100%, 0%);
+  justify-content: space-around;
+}
+.box {
+  background-color: #ccc;
+  padding: 50px;
+  margin: 5px;
+  transition: all 2s;
+  border-radius: 50%;
+}
+
+#box1 {
+  position: relative;
+  left: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+    #box1 {
+      position: relative;
+      left: 200px;
+    }
+    
+  }
+
+  
+@media only screen and (max-width: 700px) {
+    .feather-square {
+      display: none;
+    }
+
+    #box1 {
+      position: relative;
+      left: -200px;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .feather-triangle {
+      display: none;
+    }
+  }

@@ -1,0 +1,31 @@
+/* basic css declarations */
+
+* {
+  box-sizing: border-box;
+}
+
+#page {
+  white-space: nowrap;
+}
+
+.wireframe {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+aside, main {
+  display: inline-block;
+}
+
+aside {
+  width: 20%;
+}
+
+main {
+  width: 80%;
+}
+
+ul li{
+  display: inline-block;
+  padding: 5px 10px;
+}
