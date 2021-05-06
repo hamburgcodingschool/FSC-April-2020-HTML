@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css grid</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <style>
+    #page {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 225px auto;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 
+        "content sidebar"
+        "content sidebar"
+        "content sidebar"
+        "content sidebar"
+      ;
+    }
+
+    aside {
+      background-color: #539384;
+      grid-area: content;
+    }
+
+    main {
+      width: -webkit-fill-available;
+      background-color: #A1E2B3;
+      border-left: 2px solid #EEF5E2;
+      grid-area: sidebar;
+    }
+
+    ul {
+      margin: 40px 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+    }
+
+    li {
+      flex-grow: 1;
+      flex-basis: auto;
+      padding: 10px 0;
+      text-align: center;
+      border-right: solid 1px #fff;          
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+
+    li + li {
+      border-left: solid 1px #006;
+    }
+
+    #content {
+      padding-left: 50px;
+    }
+
+    #logo {
+      padding: 50px;
+      width: 125px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="page">
+    <aside>
+      <div id="logo">
+        logo
+      </div>
+    </aside>
+    <main>
+      <nav>
+        <ul>
+          <li>menuItem</li>
+          <li>menuItem</li>
+          <li>menuItem</li>
+          <li>menuItem</li>
+          <li>menuItem</li>
+          <li>menuItem</li>
+        </ul>
+      </nav>
+      <div id="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore facere animi, dignissimos, cumque ipsa aut
+          praesentium, suscipit iste adipisci sed in ad corrupti voluptates id commodi repellendus! Nulla, aliquam.
+        </p>
+
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
