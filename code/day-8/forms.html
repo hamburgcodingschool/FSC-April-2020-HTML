@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms</title>
+  <style>
+    * {
+      font-size: 30px;
+    }
+    body {
+      width: 50vw;
+      margin: 50px auto 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ihre Daten</h1>
+  <form action="http://localhost:8080/forms/form.php" method="get">
+    <fieldset>
+      <legend>Adresse</legend>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Rabe" />
+      <br />
+      
+      <h2>radio</h2>
+      <input type="radio" id="müde" name="state" />
+      <label for="müde">müde</label>
+      <br />
+      <input type="radio" id="wach" name="state" />
+      <label for="wach">wach</label>
+      <br />
+    </fieldset>
+    
+    <fieldset>
+      <legend>Infos</legend>
+      
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor">
+      <br />
+    </fieldset>
+    
+
+    <input type="submit" value="Absenden" id="send" />
+  </form>
+</body>
+</html>
