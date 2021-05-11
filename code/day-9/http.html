@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>http</title>
+  <style>
+    body {
+      width: 75%;
+      margin: 50px auto 0;
+      font-size: 28px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    code {
+      font-family: monospace;
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    HTTP is a request/response protocol
+  </h1>
+  <img src="https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview/basic_static_app_server.png" alt="">
+  <ol>
+    <li>you type in some URL</li>
+    <li>Browser asks Name-Server (DNS-Resolver): what's the IP?</li>
+    <li>
+      Browser sends HTTP request
+      <code>
+        GET /index.html HTTP/1.1
+      </code>
+    </li>
+    <li>
+      Server sends back HTTP Response
+      <code>
+        HTTP/1.1 200 OK
+      </code>
+    </li>
+    <li> Browser renders page</li>
+  </ol>
+
+</body>
+</html>
